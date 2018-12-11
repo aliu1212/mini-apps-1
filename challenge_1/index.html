@@ -1,2 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="./app.js"></script>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2px;
+      grid-template-rows: 20px 20px 20px;
+      grid-template-columns: 20px 20px 20px;
+    }
+    .boxOne {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .boxTwo {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .boxThree {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .boxFour {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .boxFive {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .boxSix {
+      grid-column: 3;
+      grid-row: 2;
+    }
+    .boxSeven {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .boxEight {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    .boxNine {
+      grid-column: 3;
+      grid-row: 3;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Tic-Tac-Toe!</h1>
+  <br>
+  <div class="grid">
+    <div class="boxOne" onclick="userClick(event)">[ ]</div>
+    <div class="boxTwo" onclick="userClick(event)">[ ]</div>
+    <div class="boxThree" onclick="userClick(event)">[ ]</div>
 
+    <div class="boxFour" onclick="userClick(event)">[ ]</div>
+    <div class="boxFive" onclick="userClick(event)">[ ]</div>
+    <div class="boxSix" onclick="userClick(event)">[ ]</div>
 
+    <div class="boxSeven" onclick="userClick(event)">[ ]</div>
+    <div class="boxEight" onclick="userClick(event)">[ ]</div>
+    <div class="boxNine" onclick="userClick(event)">[ ]</div>
+  </div>
+  <br><br>
+  <div id="status">Who will win...?</div>
+
+</body>
+</html>
