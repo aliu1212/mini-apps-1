@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+  #output {
+    white-space: pre-line;
+  }
+  </style>
   <script src="app.js"></script>
   <title>challenge_2</title>
 </head>
@@ -8,10 +13,18 @@
 <body>
   <h2>The spiciest CSV report generator on the net <img src="https://clipart.info/images/ccovers/1495818555cartoon-fire-flames-emoji-png-transparent.png" height="50" width="50"></img></h2>
   <br>
+  <!-- before the first refactor
   <form onsubmit="formSubmit(event)">
     <input id="input" type="text" placeholder="JSON data here.."/>
     <button type="submit">Submit</button>
   </form>
+  -->
+  <form method="POST" action="/upload_json">
+    <input type="file" id="filey" accept="text/plain, application/json"><br>
+    <input type='submit' name='button' value='upload'>
+  </form>
+  <br><br>
+  <div id="output">Output here...</div>
 </body>
 
 </html>
